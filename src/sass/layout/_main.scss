@@ -1,0 +1,48 @@
+.main-app {
+  padding: 64px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+  .welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+
+    &-title {
+      font-size: 3rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 72px;
+    }
+  }
+
+  .generator {
+    padding: 12px 0px;
+  }
+
+  .result-container {
+    padding: 10px;
+
+    article {
+      height: 9rem;
+    }
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .main-app {
+    .welcome {
+      &-title {
+        font-size: 1.7rem;
+        line-height: 1.3;
+      }
+    }
+  }
+}

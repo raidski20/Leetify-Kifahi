@@ -1,0 +1,27 @@
+// Custom Bootstrap Variables
+@import "abstracts/variables";
+
+// Import Bootstrap functions, vars, mixins
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+
+// Import Custom map amends
+@import "abstracts/map-amends";
+
+// Custom Bootstrap Utilities
+@import "bootstrap/scss/utilities";
+
+@import "abstracts/utilities";
+
+@import "bootstrap/scss/utilities/api";
+
+// Bootstrap main import
+@import 'bootstrap/scss/bootstrap';
+
+@import "base/typography";
+@import "layout/navbar";
+@import "layout/main";
+@import "layout/footer";

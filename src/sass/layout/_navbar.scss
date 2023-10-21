@@ -1,0 +1,21 @@
+.navbar {
+  &-brand {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding: 4px 8px;
+
+    .brand-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5.167px;
+      width: 31px;
+      height: 31px;
+      padding: 2.067px;
+      border-radius: 4.133px;
+      background: linear-gradient(164deg, #000 23.78%, rgba(255, 0, 31, 0.49) 51.16%, #15BF8C 82.79%);
+    }
+  }
+}
