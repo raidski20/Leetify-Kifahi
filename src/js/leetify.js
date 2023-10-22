@@ -1,5 +1,6 @@
 
 import vocabulary from './vocabulary.json';
+import { showToastMessage } from './customSweetalertFunctions.js';
 
 $(document).ready(function() {
 
@@ -15,12 +16,11 @@ $(document).ready(function() {
         const encryptedText = $('#leetText').text().trim();
         try {
             await navigator.clipboard.writeText(encryptedText);
-            console.log('Content copied to clipboard');
+            showToastMessage('تم النسخ بنجاح', 'success');
         } catch (err) {
-            console.error('Failed to copy: ', err);
+            showToastMessage('حدث خطأ ما أثناء النسخ', 'error', 'error');
         }
     });
-
 });
 
 function generateLeet(input) {
