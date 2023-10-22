@@ -10,6 +10,17 @@ $(document).ready(function() {
         const result = generateLeet(inputString);
         $('#leetText').text(result);
     });
+
+    $('#copyButton').click(async function () {
+        const encryptedText = $('#leetText').text().trim();
+        try {
+            await navigator.clipboard.writeText(encryptedText);
+            console.log('Content copied to clipboard');
+        } catch (err) {
+            console.error('Failed to copy: ', err);
+        }
+    });
+
 });
 
 function generateLeet(input) {
